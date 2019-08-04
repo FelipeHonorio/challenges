@@ -20,7 +20,7 @@ function changeAlphabet(letter) {
   let newLetter = indexOf != -1 ? alphabet[indexOf + 1] : letter;
   
   if(isVowel(newLetter)){
-    newLetter += newLetter.toUpperCase();
+    newLetter = newLetter.toUpperCase();
   }
     
   return newLetter;
@@ -31,4 +31,4 @@ function isVowel(str){
 }
 
 // keep this function call here 
-LetterChanges(readline());
+LetterChanges("Hello world"); //Ifmmp xpsmE

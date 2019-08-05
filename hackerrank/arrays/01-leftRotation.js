@@ -16,3 +16,17 @@ function rotLeft(array, numRot){
 }
 
 rotLeft([1,2,3,4,5], 2) //[3,4,5,1,2]
+
+// ============
+//     V2
+// ============
+
+
+function rotLeftv2(array, numRot){
+  for (let i = 0; i < numRot; i++) {
+    array.push(array.shift());
+  }
+  return array;
+}
+ 
+rotLeftv2([1,2,3,4,5], 2) //[3,4,5,1,2]
